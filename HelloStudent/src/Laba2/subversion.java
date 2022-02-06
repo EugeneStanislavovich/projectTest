@@ -26,6 +26,11 @@ public class subversion {
 	button_exit.addActionListener(actionListener); // добавляем слушатель к кнопке
 	main_panel.add(button_exit);
 	
+	JButton information = new JButton("Информация");
+    information.setBounds(10,200,150,40);
+    ActionListener actionListener1 = new Information(); 
+    information.addActionListener(actionListener1); 
+    main_panel.add(information);
 	
 	
 	main_GUI.setVisible(true);
