@@ -18,7 +18,7 @@ public class subversion {
 	public static void main(String[] args) throws IOException { // интересные заметки: http://www.mstu.edu.ru/study/materials/java/
 
 		BufferedImage bufferedImage = ImageIO.read(new File("ugatu.png"));
-		Image image = bufferedImage.getScaledInstance(200, 150, 0);
+		Image image = bufferedImage.getScaledInstance(300, 149, 0);
 			
 		JFrame main_GUI = new JFrame("subversion");	// создание графического окна
 		main_GUI.setTitle ("Using subversion for developers");
