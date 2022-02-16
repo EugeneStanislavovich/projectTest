@@ -13,12 +13,14 @@ import javax.swing.event.MenuKeyEvent;
 
 public class subversion {
 	
-	
+
 	
 	public static void main(String[] args) throws IOException { // интересные заметки: http://www.mstu.edu.ru/study/materials/java/
 
-		BufferedImage bufferedImage = ImageIO.read(new File("ugatu.png"));
-		Image image = bufferedImage.getScaledInstance(300, 149, 0);
+		//BufferedImage bufferedImage = ImageIO.read(new File("ugatu.jpg"));   ( удалено в 8 ревизии.)
+		//Image image = bufferedImage.getScaledInstance(300, 149, 0);
+	
+		Image image = ImageIO.read(subversion.class.getResource("/ugatu.jpg"));
 			
 		JFrame main_GUI = new JFrame("subversion");	// создание графического окна
 		main_GUI.setTitle ("Using subversion for developers");
@@ -38,7 +40,7 @@ public class subversion {
 		ImageIcon icon = new ImageIcon(image);
 		JLabel pich = new JLabel();
 		pich.setIcon(icon);
-		pich.setBounds(200, 100, 300, 150);
+		pich.setBounds(250, 100, 300, 150);
 		main_panel.add(pich);
 		pich.setVisible(false);
 		
