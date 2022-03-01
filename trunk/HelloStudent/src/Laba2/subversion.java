@@ -39,7 +39,7 @@ public class subversion {
 		ImageIcon icon = new ImageIcon(image);
 		JLabel pich = new JLabel();
 		pich.setIcon(icon);
-		pich.setBounds(250, 100, 300, 150);
+		pich.setBounds(430, 30, 300, 150);
 		main_panel.add(pich);
 		pich.setVisible(false);
 
@@ -84,16 +84,16 @@ public class subversion {
 						pich.setBounds(250, 50,300, 150);
 						break;
 					case "Слева":
-						pich.setBounds(0, 100,300, 150);
+						pich.setBounds(20, 100,300, 150);
 						break;
 					case "По центру":
-						pich.setBounds(250, 100, 300, 150);
+						pich.setBounds(250, 150, 300, 150);
 						break;
 					case "Справа":
-						pich.setBounds(500, 100,300, 150);
+						pich.setBounds(450, 100,300, 150);
 						break;
 					case "Снизу":
-						pich.setBounds(250, 400,300, 150);
+						pich.setBounds(250, 350,300, 150);
 						break;
 				}
 			}
