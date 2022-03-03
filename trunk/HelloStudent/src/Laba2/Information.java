@@ -5,11 +5,11 @@ import javax.swing.JOptionPane;
 
 public class Information implements ActionListener {
     public void actionPerformed(ActionEvent e) {
-        String message = "";
-        message += "Налигацкий Евгений\n";
-        message += "Аминев Алексей\n";
-        message += "Вяхирев Алексей\n";
-        message += "Масленникова Ванесса\n";
+        String message = "ФИО и номера зачетных книжек\n";
+        message += "Налигацкий Евгений 20150096\n";
+        message += "Аминев Алексей 20130087\n";
+        message += "Вяхирев Алексей 20130485\n";
+        message += "Масленникова Ванесса 20130840\n";
         
         JOptionPane.showMessageDialog(null, message , "Сообщение" , JOptionPane.PLAIN_MESSAGE);
     }
