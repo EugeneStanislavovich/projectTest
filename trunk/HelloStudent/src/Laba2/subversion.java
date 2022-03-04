@@ -56,13 +56,15 @@ public class subversion {
 		main_panel.add(information);
 
 		JMenuBar menuBar = new JMenuBar();
-		JMenu setLogo = new JMenu("Изображение");
-		setLogo.setMnemonic(MenuKeyEvent.VK_F);
-		menuBar.add(setLogo);
+		JMenu GlavnoeMenu = new JMenu("Меню");
+		GlavnoeMenu.setMnemonic(MenuKeyEvent.VK_F);
+		menuBar.add(GlavnoeMenu);
 		JMenuItem LogoItem = new JMenuItem("Отобразить логотип УГАТУ");
-		setLogo.add(LogoItem);
+		JMenuItem FileItem = new JMenuItem("Загрузить файл");
+		GlavnoeMenu.add(LogoItem);
+		GlavnoeMenu.add(FileItem);
 		JMenuItem Exit = new JMenuItem("Выход");
-		setLogo.add(Exit);
+		GlavnoeMenu.add(Exit);
 		main_GUI.setJMenuBar(menuBar);
 
 		// Список действий в JComboBox
@@ -118,6 +120,9 @@ public class subversion {
 		LogoItem.addActionListener(actionListener2);
 		ActionListener actionListener3 = new ExitMenu();
 		Exit.addActionListener(actionListener3);
+		ActionListener FileDownload = new FileDownload();
+		FileItem.addActionListener(FileDownload);
+		
 		main_GUI.setVisible(true);
 		main_GUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
