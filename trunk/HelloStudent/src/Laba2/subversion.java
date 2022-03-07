@@ -73,8 +73,7 @@ public class subversion {
 			"Слева",
 			"По центру",
 			"Справа",
-			"Снизу",
-			"Отсортировать данные в проекте 25"
+			"Снизу"
 		};
 
 		// Обработчик нажатий на компоненты
@@ -104,7 +103,7 @@ public class subversion {
 
 		// Инициализация JComboBox и добавление слушателя на нажатия
 		JComboBox comboBox = new JComboBox(items);
-		comboBox.setBounds(30, 20, 240, 30);
+		comboBox.setBounds(50, 50, 150, 30);
 		comboBox.addActionListener(actionComboBox);
 		main_panel.add(comboBox);
 
