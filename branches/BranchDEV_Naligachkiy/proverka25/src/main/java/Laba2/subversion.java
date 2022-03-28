@@ -153,6 +153,7 @@ public class subversion {
 				JOptionPane.showMessageDialog(null, message , "Сообщение" , JOptionPane.PLAIN_MESSAGE);
 			}
 		}
+		
 
 		ActionListener actionListener2 = new ShowLogo();
 		LogoItem.addActionListener(actionListener2);
